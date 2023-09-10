@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+.top {
+  background-image: url("../img/f-fv__bg.png");
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  z-index: 0;
+}
+
+.tab-wrap__nav1__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-wrap__nav1__list__item {
+  width: 50%;
+  /* 変更 */
+  margin: 0 0.5%;
+  text-align: center;
+  list-style: none;
+}
+
+.tab-wrap__nav1__list__item a {
+  display: block;
+  color: #707070;
+  font-size: 1.15rem;
+  background-color: #e5f4e9;
+  border-radius: 10px;
+  padding: 10px 0;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+
+.tab-wrap__nav1__list__item a:hover {
+  background-color: #52b567;
+  color: #fff;
+  font-weight: 500;
+}
+
+.tab-wrap__nav1__list__item.__now a {
+  background-color: #52b567;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* faq */
+#faq-1 {
+  background-color: #52b567;
+}
+
+#faq-2 {
+  background-color: #e5f4e9;
+}
+
+.faq-wrap__ttl {
+  text-align: center;
+}
+
+.faq-wrap__ttl .ttl {
+  display: inline-block;
+  color: #fff;
+  background: linear-gradient(transparent 80%, #fde67d 20%);
+}
+
+#faq-2 .faq-wrap__ttl .ttl {
+  color: #707070;
+}
+
+.faq-wrap__body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.5%;
+}
+
+.faq-wrap__body__list {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.faq-wrap__body__list__item {
+  position: relative;
+  margin: 1.5%;
+  background-color: #fff;
+  border-radius: 5rem;
+  padding: 1.75% 3.5%;
+  list-style: none;
+}
+
+.faq-wrap__body__list__item__tog {
+  display: none;
+}
+
+.faq-wrap__body__list__item__tog:checked
++ .faq-wrap__body__list__item__ttl
++ .faq-wrap__body__list__item__con {
+  max-height: 500px;
+  transition: all 1.5s;
+}
+
+.faq-wrap__body__list__item__ttl,
+.faq-wrap__body__list__item__con {
+  transform: translate(0);
+  transition: all 0.3s;
+}
+
+.faq-wrap__body__list__item__ttl {
+  display: block;
+  font-weight: 500;
+}
+
+/* ＋の表記 */
+.faq-wrap__body__list__item__ttl::after,
+.faq-wrap__body__list__item__ttl::before {
+  content: "";
+  position: absolute;
+  right: 0.35rem;
+  top: 0.35rem;
+  width: 2.5px;
+  height: 17.5px;
+  background-color: #52b567;
+  transition: all 0.3s;
+}
+
+.faq-wrap__body__list__item__ttl::after {
+  transform: rotate(90deg);
+}
+
+.faq-wrap__body__list__item__tog:checked+.faq-wrap__body__list__item__ttl::before {
+  transform: rotate(90deg);
+}
+
+
+.faq-wrap__body__list__item__con {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.faq-wrap__body__list__item__con p {
+  padding: 1% 0 1%;
+  font-weight: 500;
+}

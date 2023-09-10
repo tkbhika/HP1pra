@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+.top {
+  background-image: url("../img/g-fv__bg.png");
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  z-index: 0;
+}
+
+/* tab */
+.tab-wrap__nav1__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-wrap__nav1__list__item {
+  width: 34%;
+  margin: 0 0.5%;
+  text-align: center;
+  list-style: none;
+}
+
+.tab-wrap__nav1__list__item a {
+  display: block;
+  color: #707070;
+  font-size: 1.15rem;
+  background-color: #e5f4e9;
+  border-radius: 10px;
+  padding: 10px 0;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+
+.tab-wrap__nav1__list__item a:hover {
+  background-color: #52b567;
+  color: #fff;
+  font-weight: 500;
+}
+
+.tab-wrap__nav1__list__item.__now a {
+  background-color: #52b567;
+  color: #fff;
+  font-weight: 500;
+}
+
+.tab-wrap__nav2__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-wrap__nav2__list__item {
+  width: 17%;
+  margin: 1% 0.5% 0 0.5%;
+  text-align: center;
+  list-style: none;
+}
+
+.tab-wrap__nav2__list__item a {
+  display: block;
+  color: #707070;
+  background-color: #e5f4e9;
+  border-radius: 10px;
+  padding: 10px 0;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+
+.tab-wrap__nav2__list__item a:hover {
+  background-color: #52b567;
+  color: #fff;
+  font-weight: 500;
+}
+
+
+/* treat */
+#treat-1 {
+  background-color: #e5f4e9;
+}
+
+#treat-2 {
+  background-color: #fff;
+}
+
+.treat-wrap__ttl {
+  text-align: center;
+}
+
+.treat-wrap__intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 3.5%;
+}
+
+.treat-wrap__intro__img {
+  width: 45%;
+  aspect-ratio: 7 / 4;
+}
+
+.treat-wrap__intro__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+#treat-2 .treat-wrap__intro__img img {
+  object-fit: contain;
+}
+
+.treat-wrap__intro__txt {
+  width: 50%;
+}
+
+.treat-wrap__intro__txt h3 {
+  font-size: 1.75rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-top: 1.5%;
+}
+
+.treat-wrap__intro__txt h3 strong {
+  background: linear-gradient(transparent 80%, #fde67d 20%);
+}
+
+.treat-wrap__intro__txt p {
+  margin-top: 1.5%;
+}
+
+.treat-wrap__caution {
+  width: 70%;
+  background-color: #52b567;
+  border-radius: 50px;
+  padding: 1% 0;
+  margin: 0 auto;
+  margin-top: 3.5%;
+}
+
+.treat-wrap__caution h4 {
+  font-size: 1.85rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+.treat-wrap__stage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.treat-wrap__stage__block {
+  width: 23.5%;
+  margin-top: 3.5%;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0px 10px 10px rgb(0 0 0 / 12.5%);
+  border-radius: 15px;
+}
+
+.treat-wrap__stage__block span {
+  display: block;
+  background-color: #707070;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 15px 15px 0 0;
+  padding: 1.5% 0;
+}
+
+.treat-wrap__stage__block i {
+  font-size: 7rem;
+  color: #ddd;
+  margin-top: 25px;
+}
+
+.treat-wrap__stage__block p {
+  text-align: left;
+  margin-top: 25px;
+  padding: 0 5% 25px;
+}
+
+.treat-wrap__head h5 {
+  display: inline-block;
+  font-size: 1.75rem;
+  width: 70%;
+  padding: 1.25% 0 1.25% 1.5%;
+  color: #fff;
+  background: #52b567;
+  border-left: solid 10px #fde67d;
+  border-bottom: solid 3px #d7d7d7;
+}
+
+.treat-wrap__head p {
+  width: 80%;
+  margin-top: 1.5%;
+}
+
+.treat-wrap__flow {
+  border-radius: 50px;
+  padding: 2.5% 7.5%;
+  margin-top: 2.5%;
+  text-align: center;
+}
+
+#treat-1 .treat-wrap__flow {
+  background-color: #fff;
+}
+
+#treat-2 .treat-wrap__flow {
+  background-color: #e5f4e9;
+}
+
+.treat-wrap__flow h6 {
+  display: inline-block;
+  font-size: 1.5rem;
+  background: linear-gradient(transparent 80%, #fde67d 20%);
+}
+
+.treat-wrap__flow__block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.treat-wrap__flow__block__one {
+  width: 27.5%;
+  margin-top: 2.5%;
+}
+
+.treat-wrap__flow__block__one img {
+  aspect-ratio: 1 / 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.treat-wrap__flow__block__one p {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 1.5%;
+}
